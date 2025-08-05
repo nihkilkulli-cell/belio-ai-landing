@@ -44,7 +44,7 @@ const Footer = () => {
     { icon: Twitter, href: "#", name: "Twitter" },
     { icon: Linkedin, href: "#", name: "LinkedIn" },
     { icon: Github, href: "#", name: "GitHub" },
-    { icon: Mail, href: "mailto:hello@belio.ai", name: "Email" }
+    { icon: Mail, href: "mailto:abishai@belio.ai", name: "Email" }
   ];
 
   return (
@@ -132,7 +132,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-border/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-sm">
-            © 2024 Belio AI. All rights reserved.
+            © 2025 Belio AI. All rights reserved.
           </p>
           
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
