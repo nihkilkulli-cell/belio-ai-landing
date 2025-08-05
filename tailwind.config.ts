@@ -65,7 +65,7 @@ export default {
 				'ai-blue': 'hsl(var(--ai-blue))',
 				'ai-teal': 'hsl(var(--ai-teal))',
 				'ai-purple': 'hsl(var(--ai-purple))',
-				'ai-green': 'hsl(var(--ai-green))'
+				'ai-blue-light': 'hsl(var(--ai-blue-light))'
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',

@@ -8,46 +8,46 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* AI Agency Brand Colors - Deep Blues & Teals */
-    --background: 221 39% 11%;
-    --foreground: 210 40% 98%;
+    /* AI Agency Brand Colors - Light Blue Theme */
+    --background: 210 40% 98%;
+    --foreground: 221 39% 11%;
 
-    --card: 221 39% 11%;
-    --card-foreground: 210 40% 98%;
+    --card: 210 40% 98%;
+    --card-foreground: 221 39% 11%;
 
-    --popover: 221 39% 11%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 210 40% 98%;
+    --popover-foreground: 221 39% 11%;
 
     --primary: 200 100% 28%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 221 39% 11%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 240 100% 70%;
+    --secondary-foreground: 221 39% 11%;
 
-    --muted: 215 25% 15%;
-    --muted-foreground: 217 10% 65%;
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 46%;
 
-    --accent: 171 100% 41%;
-    --accent-foreground: 221 39% 11%;
+    --accent: 220 100% 50%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 215 25% 25%;
-    --input: 215 25% 25%;
+    --border: 240 5% 84%;
+    --input: 240 5% 84%;
     --ring: 200 100% 28%;
 
     /* Custom Brand Variables */
     --ai-blue: 200 100% 28%;
     --ai-teal: 171 100% 41%;
     --ai-purple: 259 94% 51%;
-    --ai-green: 142 76% 36%;
+    --ai-blue-light: 220 100% 70%;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(221 39% 11%) 0%, hsl(200 100% 28%) 50%, hsl(171 100% 41%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(210 40% 98%) 0%, hsl(240 100% 95%) 50%, hsl(220 100% 90%) 100%);
     --gradient-secondary: linear-gradient(135deg, hsl(200 100% 28%) 0%, hsl(259 94% 51%) 100%);
-    --gradient-accent: linear-gradient(90deg, hsl(171 100% 41%) 0%, hsl(142 76% 36%) 100%);
-    --gradient-hero: radial-gradient(ellipse at center, hsl(200 100% 28% / 0.3) 0%, hsl(221 39% 11%) 70%);
+    --gradient-accent: linear-gradient(90deg, hsl(220 100% 50%) 0%, hsl(240 100% 70%) 100%);
+    --gradient-hero: radial-gradient(ellipse at center, hsl(220 100% 95% / 0.5) 0%, hsl(210 40% 98%) 70%);
     
     /* Shadows & Effects */
     --shadow-ai-glow: 0 0 40px hsl(200 100% 28% / 0.3);
