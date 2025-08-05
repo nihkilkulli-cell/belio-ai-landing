@@ -81,12 +81,13 @@ const CTA = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm">
               <a href="mailto:hello@belio.ai" className="text-accent hover:text-accent/80 transition-colors">
-                hello@belio.ai
+                abishai@belio.ai
               </a>
               <span className="hidden sm:block text-muted-foreground">•</span>
-              <a href="tel:+1-555-BELIO-AI" className="text-accent hover:text-accent/80 transition-colors">
-                +1 (555) BELIO-AI
-              </a>
+           /*   <a href="tel:+1-555-BELIO-AI" className="text-accent hover:text-accent/80 transition-colors">
+               +1 (555) BELIO-AI
+                </a>
+              */
               <span className="hidden sm:block text-muted-foreground">•</span>
               <span className="text-muted-foreground">Available 24/7</span>
             </div>
