@@ -41,7 +41,11 @@ const CTA = () => {
               Try Live Demo
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button variant="ai" size="xl">
+            <Button 
+              variant="ai" 
+              size="xl" 
+              onClick={() => window.open('https://calendly.com/abishai-belio', '_blank')}
+            >
               <Calendar className="w-5 h-5" />
               Book Consultation
             </Button>
