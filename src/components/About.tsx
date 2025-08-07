@@ -1,0 +1,72 @@
+const About = () => {
+  return (
+    <section id="about" className="py-24 bg-gradient-to-br from-background to-muted/20">
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold gradient-text mb-6">
+            Seamless. Smart. Scalable.
+          </h1>
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-8">
+            About Us
+          </h2>
+        </div>
+
+        <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-6">
+          <p className="text-lg">
+            Belio AI helps service businesses work smarter, not harder.
+          </p>
+          
+          <p>
+            We build AI-powered voice agents that answer calls, qualify leads, and book appointments — 24/7 — so you never miss a customer.
+          </p>
+
+          <div className="my-12">
+            <h3 className="text-2xl font-semibold text-foreground mb-6">Our mission is simple:</h3>
+            
+            <div className="grid md:grid-cols-3 gap-8 mt-8">
+              <div className="text-center p-6 rounded-lg bg-card border border-border/50">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h4 className="font-semibold text-foreground mb-2">Save Time</h4>
+                <p className="text-sm">Handle repetitive calls and admin tasks automatically</p>
+              </div>
+
+              <div className="text-center p-6 rounded-lg bg-card border border-border/50">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                </div>
+                <h4 className="font-semibold text-foreground mb-2">Increase Revenue</h4>
+                <p className="text-sm">Capture more qualified leads around the clock</p>
+              </div>
+
+              <div className="text-center p-6 rounded-lg bg-card border border-border/50">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <h4 className="font-semibold text-foreground mb-2">Improve Experience</h4>
+                <p className="text-sm">Fast, friendly, human-like conversations</p>
+              </div>
+            </div>
+          </div>
+
+          <p>
+            We believe the future of customer service is always-on, intelligent, and personal. With Belio AI, your business can stay available to customers day and night — without adding to your team's workload.
+          </p>
+
+          <p>
+            Founded in Canada, Belio AI serves clients across North America, helping them turn missed calls into booked appointments and happy customers.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
