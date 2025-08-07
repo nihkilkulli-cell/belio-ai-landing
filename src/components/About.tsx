@@ -17,7 +17,7 @@ const About = () => {
           </p>
           
           <p>
-            We build AI-powered voice agents that answer calls, qualify leads, and book appointments — 24/7 — so you never miss a customer.
+            We build AI-powered voice agents that answer calls, qualify leads, and book appointments - 24/7,so you never miss a customer.
           </p>
 
           <div className="my-12">
