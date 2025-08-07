@@ -6,7 +6,7 @@ const About = () => {
           <h1 className="text-4xl md:text-5xl font-bold gradient-text mb-6">
             Seamless. Smart. Scalable.
           </h1>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
             About Us
           </h2>
         </div>
