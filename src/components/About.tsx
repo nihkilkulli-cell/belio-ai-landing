@@ -3,11 +3,11 @@ const About = () => {
     <section id="about" className="py-24 bg-gradient-to-br from-background to-muted/20">
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold gradient-text mb-6">
-            Seamless. Smart. Scalable.
-          </h1>
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
+          <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
             About Us
+          </h1>
+           <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">
+            Seamless. Smart. Scalable.
           </h2>
         </div>
 
