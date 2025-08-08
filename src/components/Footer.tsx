@@ -1,44 +1,6 @@
 import { Brain, Twitter, Linkedin, Github, Mail } from "lucide-react";
 
 const Footer = () => {
-  const footerSections = [
-    {
-      title: "Product",
-      links: [
-        { name: "Features", href: "#features" },
-        { name: "Pricing", href: "#pricing" },
-        { name: "API Docs", href: "#" },
-        { name: "Integrations", href: "#" }
-      ]
-    },
-    {
-      title: "Company",
-      links: [
-        { name: "About Us", href: "#about" },
-        { name: "Careers", href: "#" },
-        { name: "Press", href: "#" },
-        { name: "Contact", href: "#contact" }
-      ]
-    },
-    {
-      title: "Resources",
-      links: [
-        { name: "Blog", href: "#" },
-        { name: "Case Studies", href: "#" },
-        { name: "Help Center", href: "#" },
-        { name: "Developer Guide", href: "#" }
-      ]
-    },
-    {
-      title: "Legal",
-      links: [
-        { name: "Privacy Policy", href: "#" },
-        { name: "Terms of Service", href: "#" },
-        { name: "Security", href: "#" },
-        { name: "GDPR", href: "#" }
-      ]
-    }
-  ];
 
   const socialLinks = [
     { icon: Twitter, href: "#", name: "Twitter" },
@@ -51,22 +13,22 @@ const Footer = () => {
     <footer className="bg-background/50 backdrop-blur-lg border-t border-border/20">
       <div className="max-w-7xl mx-auto px-6 py-16">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
+        <div className="flex justify-center mb-12">
           {/* Brand Section */}
-          <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-6">
+          <div className="text-center max-w-md">
+            <div className="flex items-center justify-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-lg bg-gradient-accent flex items-center justify-center">
                 <Brain className="w-6 h-6 text-background" />
               </div>
               <span className="text-2xl font-bold gradient-text">Belio AI</span>
             </div>
             
-            <p className="text-muted-foreground mb-6 max-w-md">
+            <p className="text-muted-foreground mb-6">
               Transforming customer interactions with intelligent voice AI technology. 
               Natural conversations, seamless integration, powerful automation.
             </p>
             
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center">
               {socialLinks.map((social, index) => {
                 const Icon = social.icon;
                 return (
@@ -82,27 +44,6 @@ const Footer = () => {
               })}
             </div>
           </div>
-
-          {/* Footer Links */}
-          {footerSections.map((section, index) => (
-            <div key={index}>
-              <h3 className="font-semibold text-foreground mb-4">
-                {section.title}
-              </h3>
-              <ul className="space-y-3">
-                {section.links.map((link, linkIndex) => (
-                  <li key={linkIndex}>
-                    <a
-                      href={link.href}
-                      className="text-muted-foreground hover:text-accent transition-colors duration-200"
-                    >
-                      {link.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
         </div>
 
         {/* Newsletter Signup */}

@@ -71,21 +71,6 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Trust Indicators */}
-          <div className="pt-12 space-y-4">
-            <p className="text-sm text-muted-foreground uppercase tracking-wider">
-              Trusted by innovative companies worldwide
-            </p>
-            <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-              {[
-                "Tech Startup", "Enterprise Corp", "Digital Agency", "SaaS Platform", "AI Company"
-              ].map((company, index) => (
-                <div key={index} className="text-sm font-medium px-4 py-2 rounded-lg bg-foreground/5 backdrop-blur-sm">
-                  {company}
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
 
