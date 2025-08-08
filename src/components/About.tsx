@@ -20,7 +20,15 @@ const About = () => {
            We build AI-powered voice agents that answer calls, qualify leads, and book appointments 24/7 so you never miss a customer.
           </p>
 
-          <div className="my-12">
+          <p>
+            We believe the future of customer service is always-on, intelligent, and personal. With Belio AI, your business can stay available to customers day and night — without adding to your team's workload.
+          </p>
+
+          <p>
+            Founded in Canada, Belio AI serves clients across North America, helping them turn missed calls into booked appointments and happy customers.
+          </p>
+        </div>
+        <div className="my-12">
             <h3 className="text-xl font-bold text-foreground mb-6">Our mission</h3>
             
             <div className="grid md:grid-cols-3 gap-8 mt-8">
@@ -55,15 +63,6 @@ const About = () => {
               </div>
             </div>
           </div>
-
-          <p>
-            We believe the future of customer service is always-on, intelligent, and personal. With Belio AI, your business can stay available to customers day and night — without adding to your team's workload.
-          </p>
-
-          <p>
-            Founded in Canada, Belio AI serves clients across North America, helping them turn missed calls into booked appointments and happy customers.
-          </p>
-        </div>
       </div>
     </section>
   );
