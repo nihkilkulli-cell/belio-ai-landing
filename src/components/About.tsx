@@ -21,7 +21,7 @@ const About = () => {
           </p>
 
           <div className="my-12">
-            <h3 className="text-xl font-semibold text-foreground mb-6">Our mission is simple:</h3>
+            <h3 className="text-xl font-bold text-foreground mb-6">Our mission</h3>
             
             <div className="grid md:grid-cols-3 gap-8 mt-8">
               <div className="ai-card text-center p-8 rounded-2xl group hover:scale-105 transition-all duration-300">
