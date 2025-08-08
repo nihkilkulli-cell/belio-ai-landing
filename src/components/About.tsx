@@ -33,7 +33,7 @@ const About = () => {
 
   <div className="grid md:grid-cols-3 gap-8 mt-8">
     <div
-      className="ai-card text-center p-8 rounded-2xl transition-all duration-300"
+      className="ai-card text-center p-8 rounded-2xl transition-all duration-300 w-72 h-72 flex flex-col justify-center"
       style={{
         transform: 'perspective(800px) rotateX(6deg) rotateY(-6deg)',
         boxShadow: '0 8px 20px rgba(0, 0, 0, 0.12)',
@@ -61,7 +61,7 @@ const About = () => {
     </div>
 
     <div
-      className="ai-card text-center p-8 rounded-2xl transition-all duration-300"
+      className="ai-card text-center p-8 rounded-2xl transition-all duration-300 w-72 h-72 flex flex-col justify-center"
       style={{
         transform: 'perspective(800px) rotateX(6deg) rotateY(-6deg)',
         boxShadow: '0 8px 20px rgba(0, 0, 0, 0.12)',
@@ -89,7 +89,7 @@ const About = () => {
     </div>
 
     <div
-      className="ai-card text-center p-8 rounded-2xl transition-all duration-300"
+      className="ai-card text-center p-8 rounded-2xl transition-all duration-300 w-72 h-72 flex flex-col justify-center"
       style={{
         transform: 'perspective(800px) rotateX(6deg) rotateY(-6deg)',
         boxShadow: '0 8px 20px rgba(0, 0, 0, 0.12)',
