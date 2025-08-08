@@ -21,7 +21,7 @@ const About = () => {
           </p>
 
           <p>
-            We believe the future of customer service is always-on, intelligent, and personal. With Belio AI, your business can stay available to customers day and night — without adding to your team's workload.
+            We believe the future of customer service is continuous, intelligent, and personalized. With Belio AI, your business remains available to customers around the clock without increasing your team’s workload.
           </p>
 
           <p>
