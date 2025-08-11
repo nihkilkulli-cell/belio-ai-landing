@@ -15,7 +15,12 @@ const Pricing = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          <Card className="ai-card p-8 rounded-2xl border-2 hover:scale-105 transition-all duration-300">
+          <Card className="ai-card p-8 rounded-2xl border-2 border-ai-blue hover:scale-105 transition-all duration-300 relative">
+            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+              <span className="bg-gradient-to-r from-ai-blue to-ai-teal text-white px-4 py-1 rounded-full text-sm font-semibold">
+                Most Popular
+              </span>
+            </div>
             <CardHeader className="text-center pb-8">
               <CardTitle className="text-2xl font-bold text-foreground mb-2">Custom Voice Agent</CardTitle>
               <div className="text-4xl font-bold gradient-text mb-4">$1500<span className="text-lg text-muted-foreground"> USD</span></div>
@@ -59,12 +64,7 @@ const Pricing = () => {
             </CardContent>
           </Card>
 
-          <Card className="ai-card p-8 rounded-2xl border-2 border-ai-blue hover:scale-105 transition-all duration-300 relative">
-            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <span className="bg-gradient-to-r from-ai-blue to-ai-teal text-white px-4 py-1 rounded-full text-sm font-semibold">
-                Most Popular
-              </span>
-            </div>
+          <Card className="ai-card p-8 rounded-2xl border-2 hover:scale-105 transition-all duration-300">
             <CardHeader className="text-center pb-8">
               <CardTitle className="text-2xl font-bold text-foreground mb-2">Custom Support Package</CardTitle>
               <div className="text-4xl font-bold gradient-text mb-4">$199<span className="text-lg text-muted-foreground"> / month</span></div>
