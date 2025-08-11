@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Mic, Play, Zap, Brain, MessageSquare } from "lucide-react";
 import heroImage from "@/assets/voice-ai-hero.jpg";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden hero-pattern">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden hero-pattern">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-hero opacity-80" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-ai-blue/10 rounded-full blur-3xl animate-pulse" />
@@ -37,22 +35,9 @@ const Hero = () => {
           {/* Hero Image/Microphone */}
           <div className="relative inline-block">
             <div className="w-32 h-32 md:w-48 md:h-48 mx-auto relative">
-              <img 
-                src={heroImage} 
-                alt="Belio AI Voice Technology" 
-                className="w-full h-full object-cover rounded-full floating-animation ai-glow"
-              />
+              <img src={heroImage} alt="Belio AI Voice Technology" className="w-full h-full object-cover rounded-full floating-animation ai-glow" />
               <div className="absolute inset-0 rounded-full bg-gradient-accent/20 pulse-glow" />
-              <Button 
-                size="icon" 
-                variant="hero" 
-                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full"
-                onClick={() => {
-                  // Add voice demo functionality here
-                }}
-              >
-                <Mic className="w-8 h-8" />
-              </Button>
+              
             </div>
             <p className="text-sm text-muted-foreground mt-4">
               Click to experience our AI voice assistant
@@ -79,8 +64,6 @@ const Hero = () => {
       <div className="absolute top-40 right-20 w-3 h-3 bg-ai-blue rounded-full opacity-40 animate-bounce delay-700" />
       <div className="absolute bottom-32 left-20 w-5 h-5 bg-ai-teal rounded-full opacity-50 animate-bounce delay-500" />
       <div className="absolute bottom-20 right-10 w-2 h-2 bg-ai-purple rounded-full opacity-70 animate-bounce delay-1000" />
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
