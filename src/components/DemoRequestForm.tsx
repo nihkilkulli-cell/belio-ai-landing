@@ -37,7 +37,7 @@ export const DemoRequestForm = ({ open, onOpenChange }: DemoRequestFormProps) =>
     setIsLoading(true);
 
     try {
-      const response = await fetch("https://voxwarelabs.app.n8n.cloud/webhook-test/ed9807bc-aae1-4b23-bd25-8c48795e6855", {
+      const response = await fetch("https://voxwarelabs.app.n8n.cloud/webhook/ed9807bc-aae1-4b23-bd25-8c48795e6855", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
