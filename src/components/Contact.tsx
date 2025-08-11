@@ -80,12 +80,9 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-          {/* Left Column - Contact Form */}
-          
-
-          {/* Right Column - Contact Info */}
-          <div className="space-y-8">
+        <div className="flex justify-center">
+          {/* Contact Info - Centered */}
+          <div className="max-w-md w-full">
             <div className="ai-card p-8 rounded-2xl backdrop-blur-lg bg-background/80">
               <h3 className="text-2xl font-bold text-foreground mb-6">Get in Touch</h3>
               
@@ -128,7 +125,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
