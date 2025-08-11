@@ -5,7 +5,6 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import voiceAiHero from "../assets/voice-ai-hero.jpg";
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -14,36 +13,36 @@ const Contact = () => {
     phone: "",
     message: ""
   });
-  const { toast } = useToast();
-
+  const {
+    toast
+  } = useToast();
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Here you would typically send the form data to your backend
     toast({
       title: "Message sent!",
-      description: "We'll get back to you within 24 hours.",
+      description: "We'll get back to you within 24 hours."
     });
-    setFormData({ name: "", email: "", company: "", phone: "", message: "" });
+    setFormData({
+      name: "",
+      email: "",
+      company: "",
+      phone: "",
+      message: ""
+    });
   };
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
       ...prev,
       [e.target.name]: e.target.value
     }));
   };
-
-  return (
-    <section 
-      id="contact" 
-      className="relative py-24 overflow-hidden"
-      style={{
-        backgroundImage: `url(${voiceAiHero})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}
-    >
+  return <section id="contact" className="relative py-24 overflow-hidden" style={{
+    backgroundImage: `url(${voiceAiHero})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed'
+  }}>
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-background/95 to-background/80 backdrop-blur-sm"></div>
       
@@ -59,77 +58,7 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left Column - Contact Form */}
-          <div className="ai-card p-8 rounded-2xl backdrop-blur-lg bg-background/90">
-            <h3 className="text-2xl font-bold text-foreground mb-6">Book a Consultation</h3>
-            
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="name">Name</Label>
-                  <Input
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    placeholder="Your full name"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    placeholder="your@email.com"
-                  />
-                </div>
-              </div>
-
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="company">Company</Label>
-                  <Input
-                    id="company"
-                    name="company"
-                    value={formData.company}
-                    onChange={handleChange}
-                    placeholder="Your company name"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="phone">Phone</Label>
-                  <Input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="(555) 123-4567"
-                  />
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="message">Message</Label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  placeholder="Tell us about your business and how we can help..."
-                  className="min-h-[120px]"
-                />
-              </div>
-
-              <Button type="submit" className="w-full">
-                Send Message
-              </Button>
-            </form>
-          </div>
+          
 
           {/* Right Column - Contact Info */}
           <div className="space-y-8">
@@ -145,7 +74,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground">Email Us</h4>
-                    <p className="text-muted-foreground">hello@belioai.com</p>
+                    <p className="text-muted-foreground">abishai@belioai.com</p>
                   </div>
                 </div>
 
@@ -157,7 +86,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground">Schedule a Call</h4>
-                    <p className="text-muted-foreground">Free 15-minute consultation</p>
+                    <p className="text-muted-foreground">Free 30-minute consultation</p>
                   </div>
                 </div>
 
@@ -198,8 +127,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
