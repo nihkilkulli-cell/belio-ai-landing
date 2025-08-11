@@ -61,7 +61,11 @@ const Hero = () => {
               <Play className="w-5 h-5 group-hover:scale-110 transition-transform" />
               Start My Free Demo
             </Button>
-            <Button variant="ai" size="xl">
+            <Button 
+              variant="ai" 
+              size="xl"
+              onClick={() => window.open('https://calendly.com/abishai-belio/new-meeting', '_blank')}
+            >
               <MessageSquare className="w-5 h-5" />
               Schedule Consultation
             </Button>
