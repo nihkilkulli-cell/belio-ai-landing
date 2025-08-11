@@ -15,6 +15,44 @@ const Pricing = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
+          <Card className="ai-card p-8 rounded-2xl border-2 hover:scale-105 transition-all duration-300">
+            <CardHeader className="text-center pb-8">
+              <CardTitle className="text-2xl font-bold text-foreground mb-2">Custom Support Package</CardTitle>
+              <div className="text-4xl font-bold gradient-text mb-4">$199<span className="text-lg text-muted-foreground"> / month</span></div>
+              <p className="text-muted-foreground">Ideal for businesses requiring ongoing voice agent management, monitoring, and improvements.</p>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-center">
+                  <svg className="w-5 h-5 text-ai-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Monthly recommendations & reports
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-5 h-5 text-ai-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  3 monthly voice agent upgrades
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-5 h-5 text-ai-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Top-tier reliability improvements
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-5 h-5 text-ai-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Ongoing development team support
+                </li>
+              </ul>
+              <p className="text-sm text-muted-foreground/80 mt-4 italic">Pricing may vary for complex projects.</p>
+              <Button className="w-full mt-8">Get Started</Button>
+            </CardContent>
+          </Card>
+
           <Card className="ai-card p-8 rounded-2xl border-2 border-ai-blue hover:scale-105 transition-all duration-300 relative">
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
               <span className="bg-gradient-to-r from-ai-blue to-ai-teal text-white px-4 py-1 rounded-full text-sm font-semibold">
@@ -57,44 +95,6 @@ const Pricing = () => {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                   Knowledge base optimization (up to 50 pages)
-                </li>
-              </ul>
-              <p className="text-sm text-muted-foreground/80 mt-4 italic">Pricing may vary for complex projects.</p>
-              <Button className="w-full mt-8">Get Started</Button>
-            </CardContent>
-          </Card>
-
-          <Card className="ai-card p-8 rounded-2xl border-2 hover:scale-105 transition-all duration-300">
-            <CardHeader className="text-center pb-8">
-              <CardTitle className="text-2xl font-bold text-foreground mb-2">Custom Support Package</CardTitle>
-              <div className="text-4xl font-bold gradient-text mb-4">$199<span className="text-lg text-muted-foreground"> / month</span></div>
-              <p className="text-muted-foreground">Ideal for businesses requiring ongoing voice agent management, monitoring, and improvements.</p>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <ul className="space-y-3 text-muted-foreground">
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-ai-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Monthly recommendations & reports
-                </li>
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-ai-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  3 monthly voice agent upgrades
-                </li>
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-ai-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Top-tier reliability improvements
-                </li>
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-ai-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Ongoing development team support
                 </li>
               </ul>
               <p className="text-sm text-muted-foreground/80 mt-4 italic">Pricing may vary for complex projects.</p>
