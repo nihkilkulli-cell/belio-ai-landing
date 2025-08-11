@@ -129,25 +129,6 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Quick Features */}
-            <div className="grid sm:grid-cols-2 gap-4">
-              <div className="flex items-center space-x-3 p-4 bg-background/50 rounded-xl backdrop-blur-sm">
-                <div className="w-2 h-2 bg-ai-blue rounded-full"></div>
-                <span className="text-foreground font-medium">24/7 Availability</span>
-              </div>
-              <div className="flex items-center space-x-3 p-4 bg-background/50 rounded-xl backdrop-blur-sm">
-                <div className="w-2 h-2 bg-ai-teal rounded-full"></div>
-                <span className="text-foreground font-medium">No Setup Fees</span>
-              </div>
-              <div className="flex items-center space-x-3 p-4 bg-background/50 rounded-xl backdrop-blur-sm">
-                <div className="w-2 h-2 bg-ai-purple rounded-full"></div>
-                <span className="text-foreground font-medium">30-Day Trial</span>
-              </div>
-              <div className="flex items-center space-x-3 p-4 bg-background/50 rounded-xl backdrop-blur-sm">
-                <div className="w-2 h-2 bg-ai-coral rounded-full"></div>
-                <span className="text-foreground font-medium">Cancel Anytime</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
