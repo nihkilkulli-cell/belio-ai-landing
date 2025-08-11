@@ -4,8 +4,11 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
+import { Play, MessageSquare } from "lucide-react";
+import { DemoRequestForm } from "./DemoRequestForm";
 import voiceAiHero from "../assets/voice-ai-hero.jpg";
 const Contact = () => {
+  const [showDemoForm, setShowDemoForm] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -51,9 +54,30 @@ const Contact = () => {
           <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">
             Ready to Get Started?
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             Book a free consultation or send us a message. We'll help you transform your customer service with AI.
           </p>
+          
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+            <Button 
+              variant="cta" 
+              size="xl" 
+              className="group"
+              onClick={() => setShowDemoForm(true)}
+            >
+              <Play className="w-5 h-5 group-hover:scale-110 transition-transform" />
+              Start My Free Demo
+            </Button>
+            <Button 
+              variant="ai" 
+              size="xl"
+              onClick={() => window.open('https://calendly.com/abishai-belio/new-meeting', '_blank')}
+            >
+              <MessageSquare className="w-5 h-5" />
+              Schedule Consultation
+            </Button>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">
@@ -127,6 +151,11 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      
+      <DemoRequestForm 
+        open={showDemoForm} 
+        onOpenChange={setShowDemoForm} 
+      />
     </section>;
 };
 export default Contact;
