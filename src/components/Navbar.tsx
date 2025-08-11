@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img src="/lovable-uploads/fd56076c-e39f-467b-9b21-4ba5e5b38c0d.png" alt="Belio AI Logo" className="w-10 h-10 object-contain" />
+            <img src="/lovable-uploads/fd56076c-e39f-467b-9b21-4ba5e5b38c0d.png" alt="Belio AI Logo" className="w-10 h-10 object-contain ml-2" />
             <span className="text-2xl font-bold gradient-text">Belio AI</span>
           </div>
 
