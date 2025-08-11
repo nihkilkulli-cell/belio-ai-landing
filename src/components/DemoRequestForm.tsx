@@ -9,10 +9,9 @@ import { useToast } from "@/hooks/use-toast";
 interface DemoRequestFormProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
-  preselectedService?: string;
 }
 
-export const DemoRequestForm = ({ open, onOpenChange, preselectedService }: DemoRequestFormProps) => {
+export const DemoRequestForm = ({ open, onOpenChange }: DemoRequestFormProps) => {
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -20,7 +19,7 @@ export const DemoRequestForm = ({ open, onOpenChange, preselectedService }: Demo
     businessEmail: "",
     phoneNumber: "",
     companyName: "",
-    serviceInterested: preselectedService || "",
+    serviceInterested: "",
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
