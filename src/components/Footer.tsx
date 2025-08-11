@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="text-center max-w-md">
             <div className="flex items-center justify-center gap-3 mb-6">
               <img src="/lovable-uploads/fd56076c-e39f-467b-9b21-4ba5e5b38c0d.png" alt="Belio AI Logo" className="w-10 h-10 object-contain" />
-              <span className="text-2xl font-bold gradient-text">Belio AI</span>
+              <span className="text-2xl font-bold gradient-text leading-none">Belio AI</span>
             </div>
             
             <p className="text-muted-foreground mb-6">
