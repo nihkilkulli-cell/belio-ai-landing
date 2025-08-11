@@ -52,8 +52,6 @@ const Footer = () => {
           </p>
           
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
-            <span>Made with AI ❤️</span>
-            <span>•</span>
             <span>Powered by Advanced Machine Learning</span>
           </div>
         </div>
