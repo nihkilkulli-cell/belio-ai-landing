@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Mic, Play, Zap, Brain, MessageSquare } from "lucide-react";
@@ -45,9 +46,6 @@ const Hero = () => {
               <div className="absolute inset-0 rounded-full bg-gradient-accent/20 pulse-glow" />
               
             </div>
-            <p className="text-sm text-muted-foreground mt-4">
-              Click to experience our AI voice assistant
-            </p>
           </div>
 
           {/* CTA Buttons */}
