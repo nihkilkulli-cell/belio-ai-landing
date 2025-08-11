@@ -25,9 +25,11 @@ const Hero = () => {
 
           {/* Main Heading */}
           <div className="space-y-4">
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-              <span className="text-foreground">Turn Conversations Into Customers — Powered by </span>
-              <span className="gradient-text">Voice AI</span>
+            <h1 className="text-6xl md:text-8xl font-bold tracking-tight">
+              <span className="block text-foreground">Turn Conversations</span>
+              <span className="block text-foreground">Into</span>
+              <span className="block gradient-text">Customers</span>
+              <span className="block text-foreground">— Powered by Voice AI</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
