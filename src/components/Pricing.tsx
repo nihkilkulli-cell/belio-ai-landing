@@ -155,6 +155,7 @@ const Pricing = () => {
       <DemoRequestForm
         open={isDemoFormOpen}
         onOpenChange={setIsDemoFormOpen}
+        preselectedService={selectedService}
       />
     </section>
   );

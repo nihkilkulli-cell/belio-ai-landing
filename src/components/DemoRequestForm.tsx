@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
@@ -9,9 +9,10 @@ import { useToast } from "@/hooks/use-toast";
 interface DemoRequestFormProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
+  preselectedService?: string;
 }
 
-export const DemoRequestForm = ({ open, onOpenChange }: DemoRequestFormProps) => {
+export const DemoRequestForm = ({ open, onOpenChange, preselectedService }: DemoRequestFormProps) => {
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -21,6 +22,12 @@ export const DemoRequestForm = ({ open, onOpenChange }: DemoRequestFormProps) =>
     companyName: "",
     serviceInterested: "",
   });
+
+  useEffect(() => {
+    if (preselectedService && open) {
+      setFormData(prev => ({ ...prev, serviceInterested: preselectedService }));
+    }
+  }, [preselectedService, open]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
