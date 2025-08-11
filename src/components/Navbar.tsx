@@ -18,18 +18,25 @@ const Navbar = () => {
   }];
   return <nav className="fixed top-0 w-full z-50 backdrop-blur-lg bg-background/80 border-b border-border/20">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-center h-16 relative">
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <div className="absolute left-0 flex items-center gap-3">
             <img src="/lovable-uploads/fd56076c-e39f-467b-9b21-4ba5e5b38c0d.png" alt="Belio AI Logo" className="w-10 h-10 object-contain ml-2" />
             <span className="text-2xl font-bold gradient-text">Belio AI</span>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
-            {navItems.map(item => <a key={item.name} href={item.href} className="text-muted-foreground hover:text-foreground transition-colors duration-200 font-medium">
+          {/* Centered Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-12">
+            {navItems.map(item => (
+              <a 
+                key={item.name} 
+                href={item.href} 
+                className="relative text-muted-foreground hover:text-foreground transition-all duration-300 font-medium text-lg group"
+              >
                 {item.name}
-              </a>)}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-primary/60 transition-all duration-300 group-hover:w-full"></span>
+              </a>
+            ))}
           </div>
 
           {/* Desktop CTA */}
