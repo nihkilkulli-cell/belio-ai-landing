@@ -7,19 +7,19 @@ const Pricing = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">
-            Simple, Transparent Pricing
+            Pricing Plans
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Choose the plan that fits your business needs. No hidden fees, no surprises.
+            Choose the package that fits your business needs
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           <Card className="ai-card p-8 rounded-2xl border-2 hover:scale-105 transition-all duration-300">
             <CardHeader className="text-center pb-8">
-              <CardTitle className="text-2xl font-bold text-foreground mb-2">Starter</CardTitle>
-              <div className="text-4xl font-bold gradient-text mb-4">$299<span className="text-lg text-muted-foreground">/month</span></div>
-              <p className="text-muted-foreground">Perfect for small businesses</p>
+              <CardTitle className="text-2xl font-bold text-foreground mb-2">Custom Voice Agent</CardTitle>
+              <div className="text-4xl font-bold gradient-text mb-4">$1500<span className="text-lg text-muted-foreground"> USD</span></div>
+              <p className="text-muted-foreground">Ideal for businesses looking to deploy a single Voice AI Agent on one dedicated phone line.</p>
             </CardHeader>
             <CardContent className="space-y-4">
               <ul className="space-y-3 text-muted-foreground">
@@ -27,21 +27,34 @@ const Pricing = () => {
                   <svg className="w-5 h-5 text-ai-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Up to 500 calls/month
+                  Voice agent pilot testing & deployment
                 </li>
                 <li className="flex items-center">
                   <svg className="w-5 h-5 text-ai-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Basic AI voice agent
+                  Custom dashboard for call metrics tracking
                 </li>
                 <li className="flex items-center">
                   <svg className="w-5 h-5 text-ai-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Email support
+                  Call flow design (up to 4 call pathways)
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-5 h-5 text-ai-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Custom API integrations (up to 2)
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-5 h-5 text-ai-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Knowledge base optimization (up to 50 pages)
                 </li>
               </ul>
+              <p className="text-sm text-muted-foreground/80 mt-4 italic">Pricing may vary for complex projects.</p>
               <Button className="w-full mt-8">Get Started</Button>
             </CardContent>
           </Card>
@@ -53,9 +66,9 @@ const Pricing = () => {
               </span>
             </div>
             <CardHeader className="text-center pb-8">
-              <CardTitle className="text-2xl font-bold text-foreground mb-2">Professional</CardTitle>
-              <div className="text-4xl font-bold gradient-text mb-4">$599<span className="text-lg text-muted-foreground">/month</span></div>
-              <p className="text-muted-foreground">For growing businesses</p>
+              <CardTitle className="text-2xl font-bold text-foreground mb-2">Custom Support Package</CardTitle>
+              <div className="text-4xl font-bold gradient-text mb-4">$199<span className="text-lg text-muted-foreground"> / month</span></div>
+              <p className="text-muted-foreground">Ideal for businesses requiring ongoing voice agent management, monitoring, and improvements.</p>
             </CardHeader>
             <CardContent className="space-y-4">
               <ul className="space-y-3 text-muted-foreground">
@@ -63,36 +76,37 @@ const Pricing = () => {
                   <svg className="w-5 h-5 text-ai-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Up to 2,000 calls/month
+                  Monthly recommendations & reports
                 </li>
                 <li className="flex items-center">
                   <svg className="w-5 h-5 text-ai-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Advanced AI voice agent
+                  3 monthly voice agent upgrades
                 </li>
                 <li className="flex items-center">
                   <svg className="w-5 h-5 text-ai-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Calendar integrations
+                  Top-tier reliability improvements
                 </li>
                 <li className="flex items-center">
                   <svg className="w-5 h-5 text-ai-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Priority support
+                  Ongoing development team support
                 </li>
               </ul>
+              <p className="text-sm text-muted-foreground/80 mt-4 italic">Pricing may vary for complex projects.</p>
               <Button className="w-full mt-8">Get Started</Button>
             </CardContent>
           </Card>
 
           <Card className="ai-card p-8 rounded-2xl border-2 hover:scale-105 transition-all duration-300">
             <CardHeader className="text-center pb-8">
-              <CardTitle className="text-2xl font-bold text-foreground mb-2">Enterprise</CardTitle>
-              <div className="text-4xl font-bold gradient-text mb-4">Custom</div>
-              <p className="text-muted-foreground">For large organizations</p>
+              <CardTitle className="text-2xl font-bold text-foreground mb-2">Custom Chatbot</CardTitle>
+              <div className="text-4xl font-bold gradient-text mb-4">$750<span className="text-lg text-muted-foreground"> USD</span></div>
+              <p className="text-muted-foreground">Perfect for businesses wanting a tailored chatbot solution to engage customers effectively.</p>
             </CardHeader>
             <CardContent className="space-y-4">
               <ul className="space-y-3 text-muted-foreground">
@@ -100,28 +114,29 @@ const Pricing = () => {
                   <svg className="w-5 h-5 text-ai-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Unlimited calls
+                  Custom chatbot design & deployment
                 </li>
                 <li className="flex items-center">
                   <svg className="w-5 h-5 text-ai-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Custom AI training
+                  Multichannel integration
                 </li>
                 <li className="flex items-center">
                   <svg className="w-5 h-5 text-ai-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  API access
+                  Lead qualification & data capture
                 </li>
                 <li className="flex items-center">
                   <svg className="w-5 h-5 text-ai-blue mr-3" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Dedicated support
+                  Performance analytics & optimization
                 </li>
               </ul>
-              <Button className="w-full mt-8">Contact Sales</Button>
+              <p className="text-sm text-muted-foreground/80 mt-4 italic">Pricing may vary based on complexity.</p>
+              <Button className="w-full mt-8">Get Started</Button>
             </CardContent>
           </Card>
         </div>
