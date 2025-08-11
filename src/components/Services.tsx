@@ -34,7 +34,7 @@ const Services = () => {
           
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="text-foreground">Conversation AI</span>
-            <span className="block gradient-text">Services</span>
+            <span className="block gradient-text">Development</span>
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
