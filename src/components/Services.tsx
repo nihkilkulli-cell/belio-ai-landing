@@ -4,24 +4,42 @@ const Services = () => {
   const services = [
     {
       icon: PhoneCall,
-      title: "Inbound Call AI",
-      description: "Intelligent voice assistants that handle incoming customer calls with natural conversation flow, query resolution, and seamless handoffs to human agents when needed.",
+      title: "Inbound Voice Agent",
+      description: "Respond faster, cut costs, and improve customer experience with our Virtual Concierge. It handles inbound queries instantly and accurately anytime, lowering operational load, boosting satisfaction, and increasing conversions.",
       color: "ai-blue",
-      features: ["24/7 Availability", "Natural Language Understanding", "Call Routing & Transfer", "Multi-language Support"]
+      features: [
+        "24/7 instant response to customer inquiries",
+        "Accurate and context-aware understanding",
+        "Reduced wait times and operational costs",
+        "Seamless integration with existing CRM systems",
+        "Improved customer satisfaction and retention"
+      ]
     },
     {
       icon: Phone,
-      title: "Outbound Call AI", 
-      description: "Automated outbound calling systems for sales, follow-ups, and customer engagement with personalized conversations and appointment scheduling capabilities.",
+      title: "Outbound Voice Agent", 
+      description: "Reignite interest and create new opportunities. Our Voice AI Agents support your outbound strategy by reaching out to dormant leads and opening the door to meaningful sales conversations with consistent and easy follow-ups.",
       color: "ai-teal",
-      features: ["Lead Qualification", "Appointment Scheduling", "Follow-up Campaigns", "CRM Integration"]
+      features: [
+        "Automated outreach to dormant or cold leads",
+        "Personalized and natural conversations",
+        "Consistent follow-ups to maximize conversions",
+        "Data-driven targeting for optimal results",
+        "Easy campaign management and analytics"
+      ]
     },
     {
       icon: MessageCircle,
-      title: "Website Chat Widget",
-      description: "Conversational AI widget that integrates seamlessly into your website, providing instant customer support and lead generation through intelligent chat interactions.",
+      title: "Chatbot Services",
+      description: "Enhance engagement with smart chatbots that provide real-time support, qualify leads, and streamline communication across platforms, making every interaction efficient and on brand.",
       color: "ai-purple",
-      features: ["Real-time Chat", "Lead Capture", "Knowledge Base Integration", "Handoff to Human Agents"]
+      features: [
+        "Multichannel chatbot integration (website, social, messaging apps)",
+        "Lead qualification and data capture",
+        "Natural language processing for smooth conversations",
+        "Easy customization to match your brand voice",
+        "Analytics and performance tracking"
+      ]
     }
   ];
 
@@ -40,13 +58,12 @@ const Services = () => {
           </div>
           
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="text-foreground">Conversational AI</span>
-            <span className="block gradient-text">Development</span>
+            <span className="text-foreground">Our</span>
+            <span className="block gradient-text">Services</span>
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Complete voice AI solutions designed to transform how your business communicates. 
-            From inbound support to outbound sales and website engagement.
+            Transforming your business with intelligent Voice AI solutions
           </p>
         </div>
 
