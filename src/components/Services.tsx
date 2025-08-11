@@ -1,50 +1,25 @@
 import { Phone, PhoneCall, MessageCircle, Zap, Shield, Headphones } from "lucide-react";
-
 const Services = () => {
-  const services = [
-    {
-      icon: PhoneCall,
-      title: "Inbound Voice Agent",
-      description: "Respond faster, cut costs, and improve customer experience with our Virtual Concierge. It handles inbound queries instantly and accurately anytime, lowering operational load, boosting satisfaction, and increasing conversions.",
-      color: "ai-blue",
-      features: [
-        "24/7 instant response to customer inquiries",
-        "Accurate and context-aware understanding",
-        "Reduced wait times and operational costs",
-        "Seamless integration with existing CRM systems",
-        "Improved customer satisfaction and retention"
-      ]
-    },
-    {
-      icon: Phone,
-      title: "Outbound Voice Agent", 
-      description: "Reignite interest and create new opportunities. Our Voice AI Agents support your outbound strategy by reaching out to dormant leads and opening the door to meaningful sales conversations with consistent and easy follow-ups.",
-      color: "ai-teal",
-      features: [
-        "Automated outreach to dormant or cold leads",
-        "Personalized and natural conversations",
-        "Consistent follow-ups to maximize conversions",
-        "Data-driven targeting for optimal results",
-        "Easy campaign management and analytics"
-      ]
-    },
-    {
-      icon: MessageCircle,
-      title: "Chatbot Services",
-      description: "Enhance engagement with smart chatbots that provide real-time support, qualify leads, and streamline communication across platforms, making every interaction efficient and on brand.",
-      color: "ai-purple",
-      features: [
-        "Multichannel chatbot integration (website, social, messaging apps)",
-        "Lead qualification and data capture",
-        "Natural language processing for smooth conversations",
-        "Easy customization to match your brand voice",
-        "Analytics and performance tracking"
-      ]
-    }
-  ];
-
-  return (
-    <section id="services" className="py-24 relative overflow-hidden">
+  const services = [{
+    icon: PhoneCall,
+    title: "Inbound Voice Agent",
+    description: "Respond faster, cut costs, and improve customer experience with our Virtual Concierge. It handles inbound queries instantly and accurately anytime, lowering operational load, boosting satisfaction, and increasing conversions.",
+    color: "ai-blue",
+    features: ["24/7 instant response to customer inquiries", "Accurate and context-aware understanding", "Reduced wait times and operational costs", "Seamless integration with existing CRM systems", "Improved customer satisfaction and retention"]
+  }, {
+    icon: Phone,
+    title: "Outbound Voice Agent",
+    description: "Reignite interest and create new opportunities. Our Voice AI Agents support your outbound strategy by reaching out to dormant leads and opening the door to meaningful sales conversations with consistent and easy follow-ups.",
+    color: "ai-teal",
+    features: ["Automated outreach to dormant or cold leads", "Personalized and natural conversations", "Consistent follow-ups to maximize conversions", "Data-driven targeting for optimal results", "Easy campaign management and analytics"]
+  }, {
+    icon: MessageCircle,
+    title: "Chatbot Services",
+    description: "Enhance engagement with smart chatbots that provide real-time support, qualify leads, and streamline communication across platforms, making every interaction efficient and on brand.",
+    color: "ai-purple",
+    features: ["Multichannel chatbot integration (website, social, messaging apps)", "Lead qualification and data capture", "Natural language processing for smooth conversations", "Easy customization to match your brand voice", "Analytics and performance tracking"]
+  }];
+  return <section id="services" className="py-24 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-ai-teal/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-ai-purple/5 rounded-full blur-3xl" />
@@ -58,7 +33,7 @@ const Services = () => {
           </div>
           
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="text-foreground">Our</span>
+            <span className="text-foreground">Conversation AI</span>
             <span className="block gradient-text">Services</span>
           </h2>
           
@@ -70,12 +45,8 @@ const Services = () => {
         {/* Services Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
           {services.map((service, index) => {
-            const Icon = service.icon;
-            return (
-              <div
-                key={index}
-                className="ai-card p-8 rounded-2xl group hover:scale-105 transition-all duration-300 h-full"
-              >
+          const Icon = service.icon;
+          return <div key={index} className="ai-card p-8 rounded-2xl group hover:scale-105 transition-all duration-300 h-full">
                 <div className={`w-16 h-16 rounded-xl bg-${service.color}/10 flex items-center justify-center mb-6 group-hover:bg-${service.color}/20 transition-colors`}>
                   <Icon className={`w-8 h-8 text-${service.color}`} />
                 </div>
@@ -91,17 +62,14 @@ const Services = () => {
                 <div className="space-y-2">
                   <h4 className="font-semibold text-foreground text-sm uppercase tracking-wider">Key Features</h4>
                   <ul className="space-y-2">
-                    {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center gap-2 text-sm text-muted-foreground">
+                    {service.features.map((feature, featureIndex) => <li key={featureIndex} className="flex items-center gap-2 text-sm text-muted-foreground">
                         <div className={`w-1.5 h-1.5 rounded-full bg-${service.color}`} />
                         {feature}
-                      </li>
-                    ))}
+                      </li>)}
                   </ul>
                 </div>
-              </div>
-            );
-          })}
+              </div>;
+        })}
         </div>
 
         {/* Additional Benefits */}
@@ -132,8 +100,6 @@ const Services = () => {
         </div>
 
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Services;
