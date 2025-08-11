@@ -1,7 +1,17 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { DemoRequestForm } from "@/components/DemoRequestForm";
 
 const Pricing = () => {
+  const [isDemoFormOpen, setIsDemoFormOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState("");
+
+  const handleGetStarted = (service: string) => {
+    setSelectedService(service);
+    setIsDemoFormOpen(true);
+  };
+
   return (
     <section id="pricing" className="py-24 bg-gradient-to-br from-background to-muted/20">
       <div className="max-w-6xl mx-auto px-6">
@@ -49,7 +59,7 @@ const Pricing = () => {
                 </li>
               </ul>
               <p className="text-sm text-muted-foreground/80 mt-4 italic">Pricing may vary for complex projects.</p>
-              <Button className="w-full mt-8">Get Started</Button>
+              <Button className="w-full mt-8" onClick={() => handleGetStarted("Custom Support Package")}>Get Started</Button>
             </CardContent>
           </Card>
 
@@ -98,7 +108,7 @@ const Pricing = () => {
                 </li>
               </ul>
               <p className="text-sm text-muted-foreground/80 mt-4 italic">Pricing may vary for complex projects.</p>
-              <Button className="w-full mt-8">Get Started</Button>
+              <Button className="w-full mt-8" onClick={() => handleGetStarted("Custom Voice Agent")}>Get Started</Button>
             </CardContent>
           </Card>
 
@@ -136,11 +146,16 @@ const Pricing = () => {
                 </li>
               </ul>
               <p className="text-sm text-muted-foreground/80 mt-4 italic">Pricing may vary based on complexity.</p>
-              <Button className="w-full mt-8">Get Started</Button>
+              <Button className="w-full mt-8" onClick={() => handleGetStarted("Custom Chatbot")}>Get Started</Button>
             </CardContent>
           </Card>
         </div>
       </div>
+
+      <DemoRequestForm
+        open={isDemoFormOpen}
+        onOpenChange={setIsDemoFormOpen}
+      />
     </section>
   );
 };
