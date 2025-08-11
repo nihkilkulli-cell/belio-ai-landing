@@ -114,25 +114,6 @@ const Services = () => {
           </div>
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center">
-          <div className="ai-card p-8 rounded-2xl max-w-2xl mx-auto">
-            <h3 className="text-3xl font-bold mb-4 text-foreground">
-              Ready to transform your conversations?
-            </h3>
-            <p className="text-muted-foreground mb-6">
-              Let's discuss how our conversational AI solutions can revolutionize your customer interactions.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-3 bg-gradient-accent text-background font-semibold rounded-lg hover:shadow-accent-glow transform hover:scale-105 transition-all duration-300">
-                Start Free Consultation
-              </button>
-              <button className="px-8 py-3 border border-accent/20 text-accent hover:bg-accent/10 rounded-lg transition-all duration-300">
-                View Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

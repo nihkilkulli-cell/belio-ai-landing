@@ -46,29 +46,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Newsletter Signup */}
-        <div className="ai-card p-8 rounded-2xl mb-12">
-          <div className="flex flex-col md:flex-row items-center gap-6">
-            <div className="flex-1 text-center md:text-left">
-              <h3 className="text-2xl font-bold text-foreground mb-2">
-                Stay ahead of the curve
-              </h3>
-              <p className="text-muted-foreground">
-                Get the latest updates on voice AI technology and industry insights.
-              </p>
-            </div>
-            <div className="flex gap-3 w-full md:w-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 md:w-64 px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-foreground"
-              />
-              <button className="px-6 py-3 bg-gradient-accent text-background font-semibold rounded-lg hover:shadow-accent-glow transition-all duration-300">
-                Subscribe
-              </button>
-            </div>
-          </div>
-        </div>
 
         {/* Bottom Section */}
         <div className="border-t border-border/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
