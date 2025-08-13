@@ -4,20 +4,17 @@ import { useState } from "react";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navItems = [{
-    name: "Home",
-    href: "/"
+    name: "Services",
+    href: "#services"
   }, {
     name: "Pricing",
-    href: "/pricing"
+    href: "#pricing"
   }, {
-    name: "How it Works",
-    href: "/how-it-works"
+    name: "About",
+    href: "#about"
   }, {
-    name: "Industries",
-    href: "/industries"
-  }, {
-    name: "FAQ",
-    href: "/faq"
+    name: "Contact",
+    href: "#contact"
   }];
   return <nav className="fixed top-0 w-full z-50 backdrop-blur-lg bg-background/80 border-b border-border/20">
       <div className="max-w-7xl mx-auto px-6">
@@ -43,10 +40,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center gap-4 absolute right-0">
-            <Button variant="ai" size="default">
-              Book Demo
-            </Button>
+          <div className="hidden md:flex items-center gap-4">
           </div>
 
           {/* Mobile Menu Button */}
@@ -62,11 +56,11 @@ const Navbar = () => {
                   {item.name}
                 </a>)}
               <div className="pt-4 space-y-2">
-                <Button variant="ai" size="sm" className="w-full">
-                  Book Demo
+                <Button variant="ghost" size="sm" className="w-full">
+                  Sign In
                 </Button>
-                <Button variant="cta" size="sm" className="w-full">
-                  Start Free
+                <Button variant="hero" size="sm" className="w-full">
+                  Get Started
                 </Button>
               </div>
             </div>
