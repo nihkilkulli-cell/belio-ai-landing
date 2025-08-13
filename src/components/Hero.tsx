@@ -21,22 +21,38 @@ const Hero = () => {
         <div className="space-y-8">
           {/* Brand Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent/20 bg-accent/5 backdrop-blur-sm">
-            <Brain className="w-4 h-4 text-accent" />
-            <span className="text-sm text-accent font-medium">Advanced Voice AI Solutions</span>
+            <MessageSquare className="w-4 h-4 text-accent" />
+            <span className="text-sm text-accent font-medium">AI Receptionist for SMBs</span>
           </div>
 
           {/* Main Heading */}
           <div className="space-y-4">
             <h1 className="text-6xl md:text-8xl font-bold tracking-tight">
-              <span className="block text-foreground">Intelligent</span>
-              <span className="block gradient-text">Voice AI</span>
-              <span className="block text-foreground">for Business</span>
+              <span className="block text-foreground">Never Miss</span>
+              <span className="block gradient-text">Another</span>
+              <span className="block text-foreground">Booking</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Transform your customer interactions with Belio AI's cutting-edge voice technology. 
-              Natural conversations, seamless integration, and powerful automation.
+              Belio AI answers every call in seconds, books appointments directly to your calendar, 
+              handles reschedules, and sends reminders — 24/7.
             </p>
+          </div>
+
+          {/* Trust Badges */}
+          <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
+            <div className="flex items-center gap-2">
+              <Zap className="w-4 h-4 text-accent" />
+              <span>Launch in &lt; 48 hours</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Brain className="w-4 h-4 text-accent" />
+              <span>Works after hours &amp; weekends</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <MessageSquare className="w-4 h-4 text-accent" />
+              <span>Google/Outlook/Calendly</span>
+            </div>
           </div>
 
           {/* Hero Image/Microphone */}
@@ -57,15 +73,15 @@ const Hero = () => {
               onClick={() => setShowDemoForm(true)}
             >
               <Play className="w-5 h-5 group-hover:scale-110 transition-transform" />
-              Start My Free Demo
+              Book a Demo
             </Button>
             <Button 
               variant="ai" 
               size="xl"
-              onClick={() => window.open('https://calendly.com/abishai-belio/new-meeting', '_blank')}
+              onClick={() => window.open('#', '_blank')}
             >
-              <MessageSquare className="w-5 h-5" />
-              Schedule Consultation
+              <Zap className="w-5 h-5" />
+              Start Free (14 days)
             </Button>
           </div>
 
